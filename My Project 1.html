@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0223)http://127.0.0.1:5500/index.html?name=Ivar&name=Ricch&email=okk%40gmail.com&phone+number=yijk&level+of+study=q1&position=accountant&age=0-25&gender=q1&marital+status=single&bio=Don%27t+believe+the+hype&signature=&signature= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>My Project</title>
+<link rel="stylesheet" href="./My Project 1_files/style.css"></head>
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+    </header>
+
+    <form>
+        <label for="name">Enter Name:</label>
+<input type="text" name="name" id="name" placeholder="first" required="">
+<input type="text" name="name" id="name" placeholder="last" required="">
+<br><br>
+<label for="email">Enter Email:</label>
+<input type="email" name="email" id="email" placeholder="Enter Email" required=""><br><br>
+<label for="phone number">Enter Phone Number:</label>
+<input type="text" id="phone number" name="phone number">
+
+<br><br>
+
+
+<label for="level of study">Level of Study:</label>
+<select name="level of study" id="level of study">
+    <option value="q1">Phd</option>
+    <option value="q2"> Master's degree</option>
+    <option value="q3">Undergraduate</option>
+</select><br><br>
+<label for="position">Position:</label>
+<input type="text" name="position" id="position"><br><br>
+<p>Select your Age:</p>
+<input type="radio" name="age" value="0-25" id="option-1">
+<label for="option-1">0-25</label>
+<input type="radio" name="age" value="26-50" id="option-2">
+<label for="option-2">26-50</label>
+<input type="radio" name="age" value="51+ id=option-3">
+<label for="option-3">51+</label><br><br>
+
+<label for="gender">Select your Gender:</label>
+<select name="gender" id="gender">
+    <option value="q1">male</option>
+    <option value="q2">female</option>
+</select><br><br>
+<p>Marital Status:</p>
+<input type="radio" name="marital status" id="option-1" value="single">
+<label for="option-1">Single</label><br>
+<input type="radio" name="marital status" id="option-2" value="married">
+<label for="option-2">Married</label><br>
+<input type="radio" name="marital status" id="option-3" value="divorced">
+<label for="option-3">Divorced</label><br><br>
+
+<label for="date">I intend to resume duties on:</label><br>
+<input type="date"><br><br>
+
+<label for="bio">Ener your Bio:</label><br>
+<textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter Your Bio" style="width: 288px; height: 186px;"></textarea>
+<br><br>
+<label for="signature">Signature of applicacant:</label><br>
+<input type="text" name="signature" id="signature">
+<br><br>
+<label for="signature">Signature of Director:</label><br>
+<input type="text" name="signature" id="signature"><br><br>
+
+<input type="submit" value="Apply" class="okay">
+
+
+
+
+
+
+
+
+    </form>
+
+    
+    
+
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+ </body></html>
